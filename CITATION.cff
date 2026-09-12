@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "SLIC Superpixel Segmentation"
+type: software
+authors:
+  - family-names: Keshavarz
+    given-names: Bahareh
+version: 1.0.0
+date-released: 2026-09-12
+repository-code: "https://github.com/Bahareh527/slic-superpixel-segmentation"
+license: MIT
+preferred-citation:
+  type: article
+  title: "SLIC Superpixels Compared to State-of-the-art Superpixel Methods"
+  authors:
+    - family-names: Achanta
+      given-names: Radhakrishna
+    - family-names: Shaji
+      given-names: Appu
+    - family-names: Smith
+      given-names: Kevin
+    - family-names: Lucchi
+      given-names: Aurelien
+    - family-names: Fua
+      given-names: Pascal
+    - family-names: Susstrunk
+      given-names: Sabine
+  journal: "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+  volume: 34
+  issue: 11
+  pages: 2274-2282
+  year: 2012
+  doi: "10.1109/TPAMI.2012.120"
+

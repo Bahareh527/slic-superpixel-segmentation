@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "slic-superpixels"
+version = "1.0.0"
+description = "A readable, from-scratch implementation of SLIC superpixel segmentation."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "Bahareh Keshavarz"}]
+dependencies = [
+  "numpy>=1.24",
+  "opencv-python-headless>=4.8",
+  "Pillow>=10",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+slic-segment = "slic_superpixels.cli:main"
+
+[project.urls]
+Repository = "https://github.com/Bahareh527/slic-superpixel-segmentation"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
